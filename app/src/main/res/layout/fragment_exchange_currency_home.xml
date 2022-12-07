@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeCurrencyHomeFragment">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="135dp"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="25sp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lbl_amount" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_compare_arrows"
+        app:layout_constraintBottom_toBottomOf="@+id/txtToCurrency"
+        app:layout_constraintEnd_toStartOf="@+id/txtToCurrency"
+        app:layout_constraintStart_toEndOf="@+id/txtFromCurrency"
+        app:layout_constraintTop_toTopOf="@+id/txtFromCurrency" />
+
+    <TextView
+        android:id="@+id/txt_lbl_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="27dp"
+        android:text="Amount"
+        android:textColor="@color/palette"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFromCurrency" />
+
+    <TextView
+        android:id="@+id/txtFromCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/border"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:padding="10dp"
+        android:text="AED"
+        android:textColor="#5C5F61"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_lbl_amount"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtToCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="306dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:padding="10dp"
+        android:text="USD"
+        android:textColor="#5C5F61"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtFromCurrency"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

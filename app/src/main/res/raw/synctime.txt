@@ -1,0 +1,3 @@
+<time>
+  <interval value="2" />
+</time>

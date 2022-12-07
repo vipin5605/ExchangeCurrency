@@ -1,0 +1,12 @@
+<countries>
+  <code value="USD" />
+  <code value="AED" />
+  <code value="AFN" />
+  <code value="BBD" />
+  <code value="BGN" />
+  <code value="EUR" />
+  <code value="GBP" />
+  <code value="INR" />
+  <code value="JEP" />
+  <code value="XCD" />
+</countries>

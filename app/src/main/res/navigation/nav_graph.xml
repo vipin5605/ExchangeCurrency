@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/exchangeCurrencyHomeFragment">
+    <fragment
+        android:id="@+id/exchangeCurrencyHomeFragment"
+        android:name="com.assessment.exchangecurrency.ExchangeCurrencyHomeFragment"
+        android:label="fragment_exchange_currency_home"
+        tools:layout="@layout/fragment_exchange_currency_home" >
+        <action
+            android:id="@+id/action_exchangeCurrencyHomeFragment_to_exchangeConfirmFragment"
+            app:destination="@id/exchangeConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exchangeConfirmFragment"
+        android:name="com.assessment.exchangecurrency.ExchangeConfirmFragment"
+        android:label="fragment_exchange_confirm"
+        tools:layout="@layout/fragment_exchange_confirm" >
+        <action
+            android:id="@+id/action_exchangeConfirmFragment_to_exchangeSuccessFragment"
+            app:destination="@id/exchangeSuccessFragment" />
+        <action
+            android:id="@+id/action_exchangeConfirmFragment_to_exchangeCurrencyHomeFragment"
+            app:destination="@id/exchangeCurrencyHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exchangeSuccessFragment"
+        android:name="com.assessment.exchangecurrency.ExchangeSuccessFragment"
+        android:label="fragment_exchange_success"
+        tools:layout="@layout/fragment_exchange_success" >
+        <action
+            android:id="@+id/action_exchangeSuccessFragment_to_exchangeCurrencyHomeFragment"
+            app:destination="@id/exchangeCurrencyHomeFragment" />
+    </fragment>
+</navigation>

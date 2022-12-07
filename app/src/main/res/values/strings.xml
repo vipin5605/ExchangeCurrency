@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ExchangeCurrency</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_success">Great now you have %1$s %2$s in your account. </string>
+    <string name="lbl_success_desc">Your conversion rate was %1$s</string>
+    <string name="lbl_dlg_title"></string>
+    <string name="lbl_dlg_desc">You are about to get %1$s %2$s for %3$s %4$s . Do you approve this transaction? </string>
+    <string name="lbl_approve">Approve</string>
+    <string name="lbl_cancel">Cancel</string>
+</resources>
